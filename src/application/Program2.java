@@ -27,6 +27,13 @@ public class Program2 {
 		Department depa = new Department("Smartphone");
 		departmentDao.insert(depa);
 		System.out.println("Inserted!");
+		
+		System.out.println("===== TEST 4: department update =====");
+
+		Department depar = new Department(2, "Cups");
+		departmentDao.update(depar);
+		System.out.println("UPDATED!");
+		
 	}
 
 }
