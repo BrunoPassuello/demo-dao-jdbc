@@ -17,12 +17,16 @@ public class Program2 {
 		System.out.println(dep);
 		
 		System.out.println("===== TEST 2: department findAll =====");
-		
 		List<Department> list = new ArrayList<>();
 		list = departmentDao.findAll();
 		for (Department dp : list) {
 			System.out.println(dp);
 		}
+		
+		System.out.println("===== TEST 3: department insert =====");
+		Department depa = new Department("Smartphone");
+		departmentDao.insert(depa);
+		System.out.println("Inserted!");
 	}
 
 }
